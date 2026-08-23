@@ -3,8 +3,8 @@
  * Never put a service-role/secret key in this file.
  */
 (() => {
-  const SUPABASE_URL = "PASTE_YOUR_SUPABASE_URL_HERE";
-  const SUPABASE_ANON_KEY = "PASTE_YOUR_SUPABASE_ANON_KEY_HERE";
+  const SUPABASE_URL = "https://your-project-id.supabase.co";
+  const SUPABASE_ANON_KEY = "sb_publishable_oydM74hWIIIBNJJDp3JU8g_buNDK4lt";
 
   const validUrl = /^https:\/\/[^\s]+\.supabase\.co$/i.test(SUPABASE_URL);
   const configured = validUrl &&
