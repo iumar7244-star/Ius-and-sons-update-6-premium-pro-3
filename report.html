@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IUS-and-SONS Report</title><link rel="stylesheet" href="styles.css"></head>
+<body><header><div class="brand"><img src="logo.svg" alt="IUS AND SONS logo"><div><h1>IUS AND SONS REPORT</h1><p>Generate your school reports with us</p><small>REPORT GENERATOR</small></div></div></header>
+<main>
+<section><h2>School Design</h2><div class="grid">
+<label>School Name<input id="school" value="IUS AND SONS"></label>
+<label>Location<input id="location"></label>
+<label>School Badge<input id="badge" type="file" accept="image/*"></label>
+<label>Paper Colour<select id="color"><option value="white">White</option><option value="red">Red</option><option value="reddark">Red Dark</option><option value="orange">Orange</option><option value="yellowlight">Yellow Light</option><option value="green">Green</option><option value="greenlight">Green Light</option><option value="blue">Blue</option><option value="bluedark">Blue Dark</option><option value="bluepurple">Blue Purple</option></select></label>
+<label>English Font<select id="fontEn"></select></label><label>Arabic Font<select id="fontAr"></select></label>
+<label>Reports per A4 page<select id="perPage"><option value="1">1 report</option><option value="combined">Primary + Theology Primary (same student)</option></select></label><label>Font Color<input id="fontColor" type="color" value="#111827"></label><label>Report Border<select id="border"><option value="none">No border</option><option value="classic">Classic border</option><option value="double">Double border</option><option value="rounded">Rounded border</option></select></label>
+</div><img id="badgePreview"></section>
+<section><h2>Report Type</h2><div class="grid">
+<label>Category<select id="category"><option value="primary">Primary School</option><option value="senior12">Senior 1 & 2 (O-Level)</option><option value="senior34">Senior 3 & 4 (O-Level)</option><option value="tp">التعليم الديني الابتدائي</option><option value="tj">أول إعدادي - ثالث إعدادي</option><option value="ts">أول ثانوي - ثالث ثانوي</option></select></label>
+<label>Class<input id="className"></label></div><p id="gradingHelp"></p></section>
+<section><h2>Students <button id="add">+ Add Student</button></h2><p class="hint">Enter the complete mark in one field, for example 100, 85, or 76.</p><div id="students"></div></section>
+<section><h2>Preview & Export</h2><select id="preview"></select><button id="print">Print / Save PDF</button><button id="word">Microsoft Word</button></section>
+<div id="report"></div></main><script src="report.js"></script></body></html>

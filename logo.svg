@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<defs>
+<linearGradient id="p" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#b86bff"/><stop offset=".4" stop-color="#7b2cbf"/><stop offset="1" stop-color="#3c096c"/></linearGradient>
+<linearGradient id="l" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#fff" stop-opacity=".9"/><stop offset=".3" stop-color="#e0aaff" stop-opacity=".6"/><stop offset="1" stop-color="#7b2cbf" stop-opacity=".1"/></linearGradient>
+<linearGradient id="b" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#fff"/><stop offset=".3" stop-color="#d8b4fe"/><stop offset="1" stop-color="#6b21a8"/></linearGradient>
+<linearGradient id="s" x1="0%" y1="100%" x2="100%" y2="0%"><stop stop-color="#4c1d95"/><stop offset=".35" stop-color="#8b5cf6"/><stop offset=".7" stop-color="#c084fc"/><stop offset="1" stop-color="#fff"/></linearGradient>
+<filter id="sh"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000" flood-opacity=".6"/></filter>
+</defs><g filter="url(#sh)">
+<path d="M130 60h60l20 15h80c8 0 15 7 15 15v120H130z" fill="url(#p)"/>
+<path d="M175 160h30v50h-30z" fill="url(#p)"/><path d="M175 160l15-15h15v15z" fill="url(#l)"/>
+<path d="M215 130h30v80h-30z" fill="url(#p)"/><path d="M215 130l15-15h15v15z" fill="url(#l)"/>
+<polygon points="255,100 295,100 275,210 240,210" fill="url(#b)"/><polygon points="255,100 270,85 305,85 295,100" fill="#fff"/>
+<path d="M105 70C70 120 80 190 160 225c60 25 140 5 140-25 0-15-15-20-30-15-30 10-90 25-125 0-35-25-30-70 0-105z" fill="url(#s)"/>
+</g></svg>

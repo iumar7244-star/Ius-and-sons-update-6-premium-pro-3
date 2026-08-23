@@ -1,0 +1,42 @@
+*{box-sizing:border-box}body{margin:0;background:#eef2f7;color:#111827;font-family:Arial,sans-serif}header{background:#04051a;color:white;text-align:center;padding:16px}.brand{display:flex;align-items:center;justify-content:center;gap:15px}.brand img{width:95px;height:75px;object-fit:contain}.brand h1{margin:0;font-size:28px;letter-spacing:2px}.brand p{margin:4px 0;color:#d8b4fe}.brand small{color:#a78bfa;letter-spacing:4px;font-weight:bold}main{max-width:1150px;margin:20px auto;padding:0 14px}section{background:white;padding:18px;margin-bottom:16px;border-radius:10px;box-shadow:0 2px 8px #0001}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}label{display:flex;flex-direction:column;gap:5px;font-weight:bold}input,select{padding:9px;font:inherit;border:1px solid #cbd5e1;border-radius:5px}button{padding:9px 13px;border:0;border-radius:5px;background:#2563eb;color:#fff;font-weight:bold;margin:5px;cursor:pointer}.danger{background:#dc2626}.green{background:#059669}.gray{background:#64748b}#badgePreview{max-width:80px;max-height:80px;margin-top:10px;display:none}.student{border:1px solid #d1d5db;padding:12px;margin:10px 0;border-radius:7px}.student-head{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.student-head input{flex:1;min-width:220px}.subject{display:grid;grid-template-columns:2fr 100px 130px 75px;gap:7px;margin:6px 0;align-items:center}.grade{text-align:center;font-weight:bold;background:#f1f5f9;padding:8px}.report-sheet{width:210mm;min-height:297mm;margin:20px auto;padding:15mm;background:#fff;box-shadow:0 0 9px #0002}.report-sheet.two{height:138.5mm;min-height:138.5mm;padding:8mm;margin:0 auto 4mm}.white{background:#fff}.red{background:#fff1f1}.reddark{background:#f7dede}.orange{background:#fff4e8}.yellowlight{background:#fffceb}.green{background:#effbf1}.greenlight{background:#f3fff5}.blue{background:#eef7ff}.bluedark{background:#e7f0ff}.bluepurple{background:#f3efff}.pink{background:#fff1f7}.yellow{background:#fffceb}.report-head{display:flex;align-items:center;justify-content:center;gap:15px}.report-badge{width:65px;height:65px;object-fit:contain}.school-title{text-align:center;font-size:28pt;font-weight:bold;text-transform:uppercase}.location{text-align:center;margin:4px 0 12px}.meta{font-size:16pt;line-height:1.55}.table{width:100%;border-collapse:collapse;margin-top:12px}.table th,.table td{border:1.5px solid #000;padding:6px;text-align:center}.table td:first-child{text-align:left}.summary{font-size:16pt;font-weight:bold;margin-top:12px;line-height:1.55}.footer{margin-top:25px;display:flex;justify-content:space-between}.two .school-title{font-size:20pt}.two .report-badge{width:45px;height:45px}.two .meta{font-size:11pt}.two .table{font-size:10pt}.two .table th,.two .table td{padding:3px}.two .summary{font-size:11pt}.two .footer{margin-top:10px;font-size:9pt}@media(max-width:700px){.grid{grid-template-columns:1fr}.subject{grid-template-columns:1fr 80px 100px 60px}.report-sheet{width:100%;min-height:0}}@media print{@page{size:A4 portrait;margin:0}header,section{display:none!important}main{margin:0;padding:0;max-width:none}.report-sheet{margin:0;width:210mm;box-shadow:none;break-after:page}.report-sheet.two{height:138.5mm;break-after:auto}.report-sheet.two:nth-child(2n){break-after:page}}.hint{background:#f8fafc;border-left:4px solid #7c3aed;padding:9px 12px;margin:8px 0;color:#475569}.report-sheet{position:relative;overflow:hidden}.report-sheet.border-classic{border:3px solid #111827}.report-sheet.border-double{border:6px double #111827}.report-sheet.border-rounded{border:3px solid #111827;border-radius:12px}.report-sheet.rtl{direction:rtl;text-align:right}.report-sheet.rtl .report-head{flex-direction:row-reverse}.report-sheet.rtl .table td:first-child{text-align:right}.mark-input{direction:ltr;text-align:center;font-weight:700}@media print{.report-sheet.border-rounded{border-radius:0}}/* IUS AND SONS Update 2 — selectable report font colour */
+.report-sheet { color: var(--report-font-color, #111827); }
+.report-sheet .school-title,.report-sheet .location,.report-sheet .meta,.report-sheet .summary,.report-sheet .footer,
+.report-sheet .table,.report-sheet .table th,.report-sheet .table td { color: inherit; }
+
+/* ===== IUS AND SONS — Dashboard & Auth additions ===== */
+.tabs{display:flex;gap:8px;margin-bottom:14px}.tab{background:#e2e8f0;color:#111827;flex:1}.tab.active{background:#2563eb;color:#fff}
+.msg{color:#dc2626;font-weight:bold;min-height:18px}
+.appShell{display:flex;min-height:100vh}
+.sidebar{width:230px;background:#04051a;color:#fff;display:flex;flex-direction:column;padding:16px 0;flex-shrink:0}
+.sideBrand{display:flex;align-items:center;gap:8px;padding:0 16px 14px;border-bottom:1px solid #ffffff22}
+.sideBrand img{width:32px;height:32px}.sideBrand span{font-weight:bold;letter-spacing:1px;font-size:13px}
+.schoolMini{display:flex;align-items:center;gap:8px;padding:12px 16px;color:#d8b4fe;font-size:13px;border-bottom:1px solid #ffffff22}
+.schoolMini img{width:24px;height:24px;object-fit:contain}
+.sidebar nav{display:flex;flex-direction:column;padding-top:6px}
+.navlink{background:none;border:0;color:#cbd5e1;text-align:left;padding:11px 16px;font-weight:600;cursor:pointer;text-decoration:none;display:block;font-size:14px}
+.navlink:hover{background:#ffffff10}.navlink.active{background:#2563eb;color:#fff}
+.appMain{flex:1;padding:24px;max-width:980px}
+.view h2{margin-top:0}
+.cards{display:flex;gap:14px;flex-wrap:wrap}
+.card{background:#fff;border-radius:10px;box-shadow:0 2px 8px #0001;padding:18px 22px;min-width:130px}
+.card b{display:block;font-size:26px}.card span{color:#64748b;font-size:13px}
+.row{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+.datatable{width:100%;border-collapse:collapse}.datatable th,.datatable td{border-bottom:1px solid #e2e8f0;padding:8px;text-align:left}
+.tag{display:inline-block;background:#eef2ff;color:#3730a3;padding:3px 9px;border-radius:20px;font-size:12px;margin:2px}
+.streamTags{margin-top:6px}
+
+/* Update 3 — elective picker row */
+.electiveRow{display:flex;gap:8px;align-items:center;margin:8px 0}
+.electiveRow select{padding:8px;border:1px solid #cbd5e1;border-radius:5px;flex:1;max-width:260px}
+.subject input.subname[readonly]{background:#f8fafc;color:#334155}
+
+/* Update 3 — landing page choice cards + School ID display */
+.choiceCard{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px;margin-bottom:14px}
+.choiceCard b{display:block;margin-bottom:4px;font-size:15px}
+.choiceCard p{margin:0 0 10px;color:#64748b;font-size:13px}
+.switchLine{text-align:center;font-size:14px}
+.switchLine a{color:#2563eb;font-weight:bold}
+.schoolIdBox{background:#04051a;color:#fff;font-size:22px;font-weight:bold;letter-spacing:2px;text-align:center;padding:16px;border-radius:8px;margin:14px 0}
+.classYearRow{display:flex;gap:8px;align-items:center;margin:8px 0}
+.classYearRow select{padding:6px;border:1px solid #cbd5e1;border-radius:5px}
+.classStudentList{margin-top:8px;font-size:13px;color:#334155}

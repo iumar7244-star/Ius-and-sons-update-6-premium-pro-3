@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IUS AND SONS — Sign In / Register</title><link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1"></script>
+</head>
+<body>
+<header><div class="brand"><img src="logo.svg" alt="logo"><div><h1>IUS AND SONS</h1><p>School Results Management System</p></div></div></header>
+<main style="max-width:460px">
+
+<section id="view-register" style="display:none">
+  <h2>Create Your School Account</h2>
+  <label>Name of School<input id="regSchool"></label>
+  <label>Email<input id="regEmail" type="email"></label>
+  <label>Phone Number 1<input id="regPhone1" type="tel"></label>
+  <label>Phone Number 2 (optional)<input id="regPhone2" type="tel"></label>
+  <label>Administrator Name<input id="regName"></label>
+  <label>Password<input id="regPassword" type="password"></label>
+  <label>Confirm Password<input id="regPassword2" type="password"></label>
+  <button id="registerBtn">Create Your Account</button>
+  <p id="registerMsg" class="msg"></p>
+  <p class="switchLine">Already registered? <a href="#" id="toLogin">Sign in</a> · <a href="index.html">← Home</a></p>
+</section>
+
+<section id="view-success" style="display:none">
+  <h2>Account Created</h2>
+  <p>Your school is registered. Save this School ID — you'll use it to log in from now on:</p>
+  <div class="schoolIdBox" id="schoolIdDisplay"></div>
+  <button id="continueDashboard" style="width:100%">Continue to Dashboard</button>
+</section>
+
+<section id="view-login" style="display:none">
+  <h2>Sign In</h2>
+  <label>School ID<input id="loginCode" placeholder="e.g. 19722004001"></label>
+  <label>Password<input id="loginPassword" type="password"></label>
+  <button id="loginBtn">Sign In</button>
+  <p id="loginMsg" class="msg"></p>
+  <p class="switchLine">Need an account? <a href="#" id="toRegister">Register your school</a> · <a href="index.html">← Home</a></p>
+</section>
+
+</main>
+<script src="config.js"></script>
+<script src="auth.js"></script>
+</body></html>

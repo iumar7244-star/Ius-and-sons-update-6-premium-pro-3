@@ -1,0 +1,94 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard — IUS AND SONS</title><link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1"></script>
+</head>
+<body>
+<div class="appShell">
+  <aside class="sidebar">
+    <div class="sideBrand"><img src="logo.svg"><span>IUS AND SONS</span></div>
+    <div id="schoolBadgeMini" class="schoolMini"></div>
+    <nav>
+      <button class="navlink active" data-view="overview">📊 Dashboard</button>
+      <button class="navlink" data-view="profile">🏫 School Profile</button>
+      <button class="navlink" data-view="years">📅 Academic Years</button>
+      <button class="navlink" data-view="classes">📚 Classes</button>
+      <button class="navlink" data-view="subjects">📖 Subjects</button>
+      <button class="navlink" data-view="teachers">👨‍🏫 Teachers</button>
+      <button class="navlink" data-view="students">👨‍🎓 Students</button>
+      <button class="navlink" data-view="results">📝 Enter Results</button>
+      <a class="navlink" href="report.html" target="_blank">🖨️ Report Generator</a>
+      <button class="navlink" id="logoutBtn">🚪 Sign Out</button>
+    </nav>
+  </aside>
+
+  <main class="appMain">
+    <section id="view-overview" class="view">
+      <h2>Dashboard</h2>
+      <div class="cards" id="overviewCards"></div>
+    </section>
+
+    <section id="view-profile" class="view" style="display:none">
+      <h2>School Profile</h2>
+      <label>School Name<input id="pf-name"></label>
+      <label>Location<input id="pf-location"></label>
+      <label>School Badge<input id="pf-badge" type="file" accept="image/*"></label>
+      <img id="pf-badge-preview" style="max-width:90px;display:none;margin-top:8px">
+      <button id="pf-save">Save Profile</button>
+      <p id="pf-msg" class="msg"></p>
+    </section>
+
+    <section id="view-years" class="view" style="display:none">
+      <h2>Academic Years</h2>
+      <div class="row"><input id="yr-input" type="number" placeholder="e.g. 2026" style="width:140px"><button id="yr-add">+ Add Year</button></div>
+      <table class="datatable"><thead><tr><th>Year</th><th>Status</th><th></th></tr></thead><tbody id="yr-body"></tbody></table>
+    </section>
+
+    <section id="view-classes" class="view" style="display:none">
+      <h2>Classes & Streams</h2>
+      <div class="row"><input id="cl-input" placeholder="e.g. Senior 2"><button id="cl-add">+ Add Class</button></div>
+      <div class="classYearRow"><label style="margin:0">Year of study to view students for:</label><select id="cl-year"></select></div>
+      <div id="cl-list"></div>
+    </section>
+
+    <section id="view-subjects" class="view" style="display:none">
+      <h2>Subjects</h2>
+      <div class="row"><input id="sub-input" placeholder="e.g. Mathematics"><button id="sub-add">+ Add Subject</button></div>
+      <table class="datatable"><thead><tr><th>Subject</th><th>Assigned classes</th><th></th></tr></thead><tbody id="sub-body"></tbody></table>
+    </section>
+
+    <section id="view-teachers" class="view" style="display:none">
+      <h2>Teachers</h2>
+      <div class="grid">
+        <label>Full Name<input id="tc-name"></label>
+        <label>Email<input id="tc-email" type="email"></label>
+        <label>Phone<input id="tc-phone" type="tel"></label>
+      </div>
+      <button id="tc-add">+ Add Teacher</button>
+      <p id="tc-msg" class="msg"></p>
+      <div id="tc-list"></div>
+    </section>
+
+    <section id="view-students" class="view" style="display:none">
+      <h2>Students</h2>
+      <div class="grid">
+        <label>Full Name<input id="st-name"></label>
+        <label>Gender<select id="st-gender"><option>Male</option><option>Female</option></select></label>
+        <label>Academic Year<select id="st-year"></select></label>
+        <label>Class<select id="st-class"></select></label>
+        <label>Stream<select id="st-stream"><option value="">— none —</option></select></label>
+      </div>
+      <button id="st-add">+ Add Student</button>
+      <p id="st-msg" class="msg"></p>
+      <table class="datatable"><thead><tr><th>Code</th><th>Name</th><th>Gender</th><th>Class</th></tr></thead><tbody id="st-body"></tbody></table>
+    </section>
+
+    <section id="view-results" class="view" style="display:none">
+      <h2>Enter Results</h2>
+      <p class="hint">Coming next: pick a year, term, assessment, class and subject, then enter marks (0–100) per student — feeding straight into the Report Generator. Let me know when your Supabase project is connected and I'll wire this section up.</p>
+    </section>
+  </main>
+</div>
+<script src="config.js"></script>
+<script src="dashboard.js"></script>
+</body></html>
